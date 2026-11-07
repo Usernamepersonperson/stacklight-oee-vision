@@ -4,6 +4,10 @@ Read the red / amber / green andon stack lights on old machines with a camera, a
 
 Pure Python + numpy. No OpenCV needed for the core, the tests or the simulator.
 
+![Chart of true versus detected machine state over 180 seconds for three simulated machines. Coloured bands (green running, amber idle or setup, red fault, grey off) match almost exactly between the true and detected rows, with machine availability of 83.3%, 70.5% and 90.3% shown on the right.](docs/figure.png)
+
+<sub>True vs detected machine state for the 180 s, 3-machine end-to-end scenario (seed 7). Simulated data.</sub>
+
 ## Why
 
 Many machines in the field have no PLC access, no data port, or a controller nobody is allowed to touch. They almost always have a stack light, though, and the light already encodes the machine state for the operators. A fixed camera pointed at the lights is a non-invasive way to get that state into software, without opening the control cabinet or changing the machine.
