@@ -1,0 +1,7 @@
+numpy>=1.26
+# optional: live camera / RTSP input
+# opencv-python>=4.8
+# optional: MQTT publishing
+# paho-mqtt>=2.0
+# tests
+# pytest>=7.4

@@ -1,0 +1,117 @@
+{
+  "line": "line-1",
+  "fps": 10.0,
+  "thresholds": {
+    "sat_min": 0.4,
+    "lit_ratio": 1.8,
+    "min_lit_v": 0.35,
+    "init_lit_v": 0.6,
+    "on_fraction": 0.2,
+    "baseline_alpha": 0.02,
+    "window_s": 2.0,
+    "settle_s": 0.3,
+    "min_blink_edges": 3,
+    "max_gap_s": 0.7,
+    "blink_min_hz": 0.7,
+    "blink_max_hz": 4.0,
+    "min_dwell_s": 1.0
+  },
+  "machines": [
+    {
+      "name": "press-01",
+      "lamps": [
+        {
+          "color": "red",
+          "roi": [
+            43,
+            40,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "amber",
+          "roi": [
+            43,
+            80,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "green",
+          "roi": [
+            43,
+            120,
+            20,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lathe-02",
+      "lamps": [
+        {
+          "color": "red",
+          "roi": [
+            150,
+            40,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "amber",
+          "roi": [
+            150,
+            80,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "green",
+          "roi": [
+            150,
+            120,
+            20,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "packer-03",
+      "lamps": [
+        {
+          "color": "red",
+          "roi": [
+            256,
+            40,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "amber",
+          "roi": [
+            256,
+            80,
+            20,
+            20
+          ]
+        },
+        {
+          "color": "green",
+          "roi": [
+            256,
+            120,
+            20,
+            20
+          ]
+        }
+      ]
+    }
+  ]
+}

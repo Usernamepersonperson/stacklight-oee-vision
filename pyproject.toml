@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stacklight-oee-vision"
+version = "0.1.0"
+description = "Retrofit OEE availability for machines without a PLC by reading their andon stack lights with a camera."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+camera = ["opencv-python>=4.8"]
+mqtt = ["paho-mqtt>=2.0"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+stacklight = "stacklight.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stacklight*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:asyncio"  # a broken global pytest-asyncio must not break collection
