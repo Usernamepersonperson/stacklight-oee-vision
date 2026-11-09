@@ -124,7 +124,7 @@ These numbers are against a simulator that I wrote, with noise I chose. They sho
 ## Next steps
 
 - A tiny classifier (ONNX) on lamp crops, to replace the hand-set HSV bands and cope with real colour variation.
-- Edge deployment on a Jetson or Raspberry Pi, reading directly from the camera.
+- Edge deployment on a small GPU board or single-board computer, reading directly from the camera.
 - OPC UA and MQTT Sparkplug B output, so states appear as standard device metrics.
 - A calibration helper to place ROIs and tune hues from a reference image.
 - Optional part counting from a second signal (door sensor, beam, or vision) to get performance and quality.
